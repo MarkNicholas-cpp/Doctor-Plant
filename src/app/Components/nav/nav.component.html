@@ -1,9 +1,12 @@
-<div class="nav-bar flex items-center justify-between px-10 p-6 bg-transparent fixed w-full z-10 text-space">
-    <div class="logo font-black text-2xl text-gray-300">Doc Plants</div>
-    <div class="flex items-center gap-3 text-gray-300">
-        <a href="/about">About</a>
-        <a href="/be-a-member">Membership Offers</a>
-        <a href="/contact">Contact us</a>
-        <a href="/get-started" class="btn-primary">Get Started</a>
+<div [ngClass]="{'bg-gray-100 text-black shadow-md': isScrolled, 'bg-transparent text-gray-300': !isScrolled,'text-space':true}"
+    class="nav-bar flex items-center justify-between px-10 p-6 fixed w-full z-30 transition-colors duration-300">
+    <div
+        [ngClass]="{'logo font-black text-2xl mx-auto md:ml-0':true,'text-gray-50':!isScrolled,'text-blue-500':isScrolled}">
+        <a href="/home">Doc Plants</a></div>
+    <div class="hidden md:flex md:items-center md:gap-3">
+        <a routerLink="/about">About</a>
+        <a routerLink="/be-a-member">Membership Offers</a>
+        <a routerLink="/contact">Contact us</a>
+        <a routerLink="/get-started" [class]="isScrolled?'btn-outline-primary':'btn-primary'">Get Started</a>
     </div>
 </div>
