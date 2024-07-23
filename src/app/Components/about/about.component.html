@@ -1,0 +1,41 @@
+<div class="bg-gray-100 relative text-space">
+    <section
+        class="h-[50vh] before:absolute before:inset-0 before:bg-about before:bg-center before:bg-no-repeat before:bg-cover before:brightness-[50%] before:saturate-50 before:hue-rotate-[15deg] flex items-center justify-start p-12 md:p-20">
+        <div class="relative z-20 text-gray-100">
+            <p class="text-xl md:text-3xl lg:text-6xl font-black">About Doc Plants</p>
+        </div>
+    </section>
+</div>
+<section class=" bg-white px-10 p-20 text-space">
+    <p class="text-center text-xl md:text-3xl font-bold md:mb-10 mb-5">Our Vision</p>
+    <div class="flex flex-col items-center justify-center w-full">
+        <p class="text-center text-sm md:text-xl w-full md:w-3/4 mb-5 md:mb-10"> Our vision is to create a world where
+            quality education and career opportunities are accessible to all,
+            fostering a global community of skilled and confident professionals.</p>
+        <button class="btn-outline-secondary transition-all duration-200 ease-in">Learn
+            More</button>
+    </div>
+</section>
+
+<div class="bg-gray-100 px-10 text-space py-5">
+    <div class=" grid grid-cols-2 py-5">
+        <div class="flex justify-between flex-col">
+            <div class="mb-10">
+                <p class="text-2xl font-bold">Our Mission</p>
+                <p>Our mission is to empower individuals through innovative education and skill-building programs,
+                    equipping them with the tools needed to achieve their career goals and contribute positively to
+                    society.
+                </p>
+            </div>
+            <button class="btn-outline-primary ">Learn more</button>
+        </div>
+        <div class="h-72 w-full">
+            <img src="https://t4.ftcdn.net/jpg/06/13/33/21/360_F_613332177_rdl36d2CnlqC1tqGQE3CizEJdu9G2Ltj.jpg"
+                class="w-full h-full object-contain brightness-50 saturate-180" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="text-space p-5">
+    <app-history [historyData]="historyData"></app-history>
+</div>

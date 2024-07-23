@@ -22,3 +22,15 @@
 .grid-card-transition {
   @apply transition-colors duration-200 ease-linear cursor-pointer;
 }
+.rounded-fancy {
+  border-radius: 0% 100% 50% 50% / 50% 50% 50% 50%;
+}
+.rounded-fancy-2 {
+  border-radius: 100% 0% 74% 26% / 75% 0% 100% 25%;
+}
+input[type="checkbox"]:checked + label .info{
+   @apply flex top-3 opacity-100 visible
+}
+input[type="checkbox"]:checked + label{
+   @apply bg-blue-500
+}
