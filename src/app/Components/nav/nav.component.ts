@@ -7,9 +7,14 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavComponent {
   isScrolled = false;
+  isNavOpen = false; 
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 0;
+  }
+
+  responsiveNav() {
+    this.isNavOpen = !this.isNavOpen; 
   }
 }
